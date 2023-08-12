@@ -1,0 +1,451 @@
+@media screen and (max-width:1250px){
+    @mixin p-text(){
+        color: var(--gray-blue-grey-blue-70, #7D8FB3);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+    }   
+    header{
+        .all {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 7;
+            width: 100vw;
+            height: 3000px;
+        }
+        nav{
+            .container{
+                max-width: 1150px;
+                .search{
+                    display: none;
+                }
+                .icons{
+                    .div{
+                        .search-right{
+                            display: inline-block;
+                            input{
+                                  width: 0;
+                                  outline: none;
+                                  border: none;
+                            }
+
+                        }
+                        #search:checked+.search-right{
+                                right: 190px;
+                                position: absolute;
+                                display: flex;
+                                padding: 15px 30px 15px 20px;
+                                align-items: center;
+                                gap: 10px;
+                                height: 50px;
+                                border-radius: 30px;
+                                background: var(--white-white, #FFF);
+                                box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+                                width: 289px;
+                                color: var(--gray-blue-grey-blue-80, #ADB8CC);
+                                input{
+                                    width: 220px;
+                                }
+                                input::placeholder{
+                                    @include p-text();
+                                    color: var(--gray-blue-grey-blue-80, #ADB8CC);
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                }
+                                label{
+                                    i{
+                                        font-size: 15px;
+                                    }
+                                }
+                                
+                        }
+                        .person{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            position: relative;
+            .container{
+                max-width: 1110px;
+                .left{
+                    position: absolute;
+                    width: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    transition: 1s;
+                    z-index: 10;
+                    left: 0px;
+                }
+                
+                #list:checked+.left{
+                    width: 100px;
+                    padding: 30px 25px;
+                }
+                .center{
+                    max-width: 1110px;
+                    padding-bottom: 100px;
+                    flex-wrap: wrap;
+
+                }
+                .right{
+                    position: absolute;
+                    width: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    transition: 1s;
+                    z-index: 10;
+                    right: 0px;
+                    border-radius: 20px;
+                }
+                
+                #right:checked+.right{
+                    width: 330px;
+                    padding: 30px 0;
+                }
+            }
+
+        }
+    }    
+}
+@media screen and (max-width:900px){
+    @mixin p-text(){
+        color: var(--gray-blue-grey-blue-70, #7D8FB3);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+    }   
+    header{
+        nav{
+            .container{
+                max-width: 718px;
+                
+                ul{
+                    display: none;
+                }
+                .icons{
+                    .div{
+                        #search:checked+.search-right{
+                                right: 229px;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            .container{
+                max-width: 690px;
+                .left{
+                    height: 850px;
+                }
+                
+                .center{
+                    flex-direction: column;
+                    .c-left{
+                        max-width: 690px;
+                        gap: 30px;
+                        .cards{
+                            max-width: 690px;
+                            height: 210px;
+                            position: relative;
+                            .card{
+                                position: absolute;
+                            }
+                            
+                            .bluu{
+                                display: flex;
+                                top: 15px;
+                                right:152px;
+                               
+                            }
+                            .black{
+                                display: flex;
+                                right: 0px;
+                                top: 25px;
+                                .text-bottom{
+                                    img{
+                                        max-width: 39.98px;
+                                        max-height: 24.711px;
+                                    }
+                                }
+                            }
+                            .crl{
+                                display: flex;
+                                right: 28px;
+                                top: 75px;
+                                position: absolute;
+                            }
+                            .mini-cards{
+                                display: none;
+                            }
+                        }
+                        .expenses{
+                            max-width: 690px;
+                            height: 570px;
+                            .e-top{
+                                max-width: 690px;
+                                }
+                            .e-bottom{
+                                    width: 100%;
+                                    max-width: 690px;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    .img{
+                                        max-width: 340px;
+                                        max-height: 340px;
+                                        width: 100%;
+                                        
+                                    }
+                                    .buttons{
+                                        max-width: 195px;
+                                        justify-content: start;
+                                    }
+                                }
+                            }
+                        }
+                    .center-right{
+                        max-width: 690px;
+                        .last-operation{
+                            max-width: 690px;
+                            .last-top{
+                                max-width: 690px;
+                            }
+                            .content-box{
+                                max-width: 690px;
+                                width: 100%;
+                                .content{
+                                    max-width: 665px;
+                                }
+                               
+                            }
+                        }
+                        .last-line{
+                            .card-box{
+                                max-width: 150px;
+                                height: 150px;
+                            }
+                            .box2{
+                                max-width: 330px;
+                                align-items: start;
+                            }
+                        }
+
+                    }
+                }
+
+                }
+        }
+    }
+        
+}    
+
+@media screen and (max-width:480px){
+    @mixin p-text(){
+        color: var(--gray-blue-grey-blue-70, #7D8FB3);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; 
+    }   
+    header{
+        nav{
+            .container{
+                max-width: 310px;
+                .icons{
+                    .icon{
+                        display: none;
+                    }
+                    .div{
+                        .crl{
+                            display: none;
+                        }
+                        .person{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            .container{
+                max-width:330px;
+                .left{
+                    flex-direction: row;
+                    height: 450px;
+                }
+                #list:checked+.left{
+                    
+                    width: 180px;
+                    padding: 30px 25px;
+                }
+                .center{
+                    max-width:330px;
+                    .c-left{
+                        max-width:330px;
+                        gap: 90px;
+                        .cards{
+                            height: 210px;
+                            position: relative;
+                            .card{
+                                max-width: 330px;
+                                position: relative;
+                            }
+                            
+                            .bluu{
+                                display: none;
+                            }
+                            .black{
+                                display: none;
+                               
+                            }
+                            .crl{
+                                display: none;
+                                
+                            }
+                            .mini-cards{
+                                max-width: 235px;
+                                display: flex;
+                                position: absolute;
+                                top: 195px;
+                                right: 67.5px;
+                                flex-direction: column-reverse;
+                                align-items: start;
+                                .line{
+                                    margin-left: 10px;
+                                    max-width: 40px;
+                                    height: 2px;
+                                }
+                                .mini-card-box{
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+
+                                }
+                            }
+                        }
+                        .expenses{
+                            max-width: 330px;
+                            height: 630px;
+                            .e-top{
+                                max-width: 330px;
+                                flex-wrap: wrap;
+                                .text{
+                                    gap:0;
+                                    div{
+                                        h3{
+                                            width: 100%;
+                                            max-width:57px;
+                                            display: flex;
+                                            height: 24.5px;
+                                            overflow: hidden;
+                                            align-items: start;
+                                        }
+                                    }
+                                    div:nth-child(1){
+                                        h3{
+                                           flex-direction: column-reverse;
+                                           
+                                        }
+                                    }
+                                }
+                            }
+                            .e-bottom{
+                                max-width: 330px;
+                                flex-direction: column;
+                                .buttons{
+                                    max-width: 278px;
+                                    justify-content: center;
+                                    .button{
+                                        padding: 3px 10px 3px 5px;
+                                        justify-content: center;
+                                        h3{
+                                            font-feature-settings: 'clig' off, 'liga' off;
+                                            font-size: 10px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 20px;
+                                        }
+                                        div{
+                                            width: 20px;
+                                            height: 20px;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .center-right{
+                        .last-operation{
+                            max-width: 330px;
+                            height: 630px;
+                            .last-top{
+                                max-width: 330px;
+                                .text{
+                                    gap: 25px;
+                                    div{
+                                        max-width: 46px;
+                                        h3{
+                                            height: 20px; 
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+                            .content-box{
+                                max-width: 330px;
+                                .content{
+                                    max-width: 330px;
+                                    .item{
+                                        .text{
+                                            height: 50px;
+                                            overflow: hidden;
+                                            gap: 0;
+                                            align-items: start;
+                                            flex-direction: column;
+
+                                        }
+                                            
+                                    }
+                                    .buttons{
+                                        .crl{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                               
+                            }
+                            .content-box::-webkit-scrollbar{
+                                width: 0;
+                            }
+                        }
+                        .last-line{
+                            .card-box{
+                                max-width: 150px;
+                                height: 150px;
+                            }
+                            .box2{
+                                max-width: 330px;
+                                align-items: start;
+                            }
+                        }
+                        .lb{
+                            flex-wrap: wrap-reverse;
+                        }
+
+                    }
+                }
+            }
+        }
+    }    
+}

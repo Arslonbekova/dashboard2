@@ -1,0 +1,369 @@
+@media screen and (max-width: 1250px) {
+  header .all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    width: 100vw;
+    height: 3000px;
+  }
+  header nav .container {
+    max-width: 1150px;
+  }
+  header nav .container .search {
+    display: none;
+  }
+  header nav .container .icons .div .search-right {
+    display: inline-block;
+  }
+  header nav .container .icons .div .search-right input {
+    width: 0;
+    outline: none;
+    border: none;
+  }
+  header nav .container .icons .div #search:checked + .search-right {
+    right: 190px;
+    position: absolute;
+    display: flex;
+    padding: 15px 30px 15px 20px;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    border-radius: 30px;
+    background: var(--white-white, #FFF);
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+    width: 289px;
+    color: var(--gray-blue-grey-blue-80, #ADB8CC);
+  }
+  header nav .container .icons .div #search:checked + .search-right input {
+    width: 220px;
+  }
+  header nav .container .icons .div #search:checked + .search-right input::-moz-placeholder {
+    color: var(--gray-blue-grey-blue-70, #7D8FB3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--gray-blue-grey-blue-80, #ADB8CC);
+    font-size: 12px;
+    line-height: 20px;
+  }
+  header nav .container .icons .div #search:checked + .search-right input::placeholder {
+    color: var(--gray-blue-grey-blue-70, #7D8FB3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--gray-blue-grey-blue-80, #ADB8CC);
+    font-size: 12px;
+    line-height: 20px;
+  }
+  header nav .container .icons .div #search:checked + .search-right label i {
+    font-size: 15px;
+  }
+  header nav .container .icons .div .person {
+    display: inline-block;
+  }
+  header section {
+    position: relative;
+  }
+  header section .container {
+    max-width: 1110px;
+  }
+  header section .container .left {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: 1s;
+    z-index: 10;
+    left: 0px;
+  }
+  header section .container #list:checked + .left {
+    width: 100px;
+    padding: 30px 25px;
+  }
+  header section .container .center {
+    max-width: 1110px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  header section .container .right {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: 1s;
+    z-index: 10;
+    right: 0px;
+    border-radius: 20px;
+  }
+  header section .container #right:checked + .right {
+    width: 330px;
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  header nav .container {
+    max-width: 718px;
+  }
+  header nav .container ul {
+    display: none;
+  }
+  header nav .container .icons .div #search:checked + .search-right {
+    right: 229px;
+  }
+  header section .container {
+    max-width: 690px;
+  }
+  header section .container .left {
+    height: 850px;
+  }
+  header section .container .center {
+    flex-direction: column;
+  }
+  header section .container .center .c-left {
+    max-width: 690px;
+    gap: 30px;
+  }
+  header section .container .center .c-left .cards {
+    max-width: 690px;
+    height: 210px;
+    position: relative;
+  }
+  header section .container .center .c-left .cards .card {
+    position: absolute;
+  }
+  header section .container .center .c-left .cards .bluu {
+    display: flex;
+    top: 15px;
+    right: 152px;
+  }
+  header section .container .center .c-left .cards .black {
+    display: flex;
+    right: 0px;
+    top: 25px;
+  }
+  header section .container .center .c-left .cards .black .text-bottom img {
+    max-width: 39.98px;
+    max-height: 24.711px;
+  }
+  header section .container .center .c-left .cards .crl {
+    display: flex;
+    right: 28px;
+    top: 75px;
+    position: absolute;
+  }
+  header section .container .center .c-left .cards .mini-cards {
+    display: none;
+  }
+  header section .container .center .c-left .expenses {
+    max-width: 690px;
+    height: 570px;
+  }
+  header section .container .center .c-left .expenses .e-top {
+    max-width: 690px;
+  }
+  header section .container .center .c-left .expenses .e-bottom {
+    width: 100%;
+    max-width: 690px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header section .container .center .c-left .expenses .e-bottom .img {
+    max-width: 340px;
+    max-height: 340px;
+    width: 100%;
+  }
+  header section .container .center .c-left .expenses .e-bottom .buttons {
+    max-width: 195px;
+    justify-content: start;
+  }
+  header section .container .center .center-right {
+    max-width: 690px;
+  }
+  header section .container .center .center-right .last-operation {
+    max-width: 690px;
+  }
+  header section .container .center .center-right .last-operation .last-top {
+    max-width: 690px;
+  }
+  header section .container .center .center-right .last-operation .content-box {
+    max-width: 690px;
+    width: 100%;
+  }
+  header section .container .center .center-right .last-operation .content-box .content {
+    max-width: 665px;
+  }
+  header section .container .center .center-right .last-line .card-box {
+    max-width: 150px;
+    height: 150px;
+  }
+  header section .container .center .center-right .last-line .box2 {
+    max-width: 330px;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav .container {
+    max-width: 310px;
+  }
+  header nav .container .icons .icon {
+    display: none;
+  }
+  header nav .container .icons .div .crl {
+    display: none;
+  }
+  header nav .container .icons .div .person {
+    display: block;
+  }
+  header section .container {
+    max-width: 330px;
+  }
+  header section .container .left {
+    flex-direction: row;
+    height: 450px;
+  }
+  header section .container #list:checked + .left {
+    width: 180px;
+    padding: 30px 25px;
+  }
+  header section .container .center {
+    max-width: 330px;
+  }
+  header section .container .center .c-left {
+    max-width: 330px;
+    gap: 90px;
+  }
+  header section .container .center .c-left .cards {
+    height: 210px;
+    position: relative;
+  }
+  header section .container .center .c-left .cards .card {
+    max-width: 330px;
+    position: relative;
+  }
+  header section .container .center .c-left .cards .bluu {
+    display: none;
+  }
+  header section .container .center .c-left .cards .black {
+    display: none;
+  }
+  header section .container .center .c-left .cards .crl {
+    display: none;
+  }
+  header section .container .center .c-left .cards .mini-cards {
+    max-width: 235px;
+    display: flex;
+    position: absolute;
+    top: 195px;
+    right: 67.5px;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  header section .container .center .c-left .cards .mini-cards .line {
+    margin-left: 10px;
+    max-width: 40px;
+    height: 2px;
+  }
+  header section .container .center .c-left .cards .mini-cards .mini-card-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header section .container .center .c-left .expenses {
+    max-width: 330px;
+    height: 630px;
+  }
+  header section .container .center .c-left .expenses .e-top {
+    max-width: 330px;
+    flex-wrap: wrap;
+  }
+  header section .container .center .c-left .expenses .e-top .text {
+    gap: 0;
+  }
+  header section .container .center .c-left .expenses .e-top .text div h3 {
+    width: 100%;
+    max-width: 57px;
+    display: flex;
+    height: 24.5px;
+    overflow: hidden;
+    align-items: start;
+  }
+  header section .container .center .c-left .expenses .e-top .text div:nth-child(1) h3 {
+    flex-direction: column-reverse;
+  }
+  header section .container .center .c-left .expenses .e-bottom {
+    max-width: 330px;
+    flex-direction: column;
+  }
+  header section .container .center .c-left .expenses .e-bottom .buttons {
+    max-width: 278px;
+    justify-content: center;
+  }
+  header section .container .center .c-left .expenses .e-bottom .buttons .button {
+    padding: 3px 10px 3px 5px;
+    justify-content: center;
+  }
+  header section .container .center .c-left .expenses .e-bottom .buttons .button h3 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  header section .container .center .c-left .expenses .e-bottom .buttons .button div {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  header section .container .center .center-right .last-operation {
+    max-width: 330px;
+    height: 630px;
+  }
+  header section .container .center .center-right .last-operation .last-top {
+    max-width: 330px;
+  }
+  header section .container .center .center-right .last-operation .last-top .text {
+    gap: 25px;
+  }
+  header section .container .center .center-right .last-operation .last-top .text div {
+    max-width: 46px;
+  }
+  header section .container .center .center-right .last-operation .last-top .text div h3 {
+    height: 20px;
+    overflow: hidden;
+  }
+  header section .container .center .center-right .last-operation .content-box {
+    max-width: 330px;
+  }
+  header section .container .center .center-right .last-operation .content-box .content {
+    max-width: 330px;
+  }
+  header section .container .center .center-right .last-operation .content-box .content .item .text {
+    height: 50px;
+    overflow: hidden;
+    gap: 0;
+    align-items: start;
+    flex-direction: column;
+  }
+  header section .container .center .center-right .last-operation .content-box .content .buttons .crl {
+    display: none;
+  }
+  header section .container .center .center-right .last-operation .content-box::-webkit-scrollbar {
+    width: 0;
+  }
+  header section .container .center .center-right .last-line .card-box {
+    max-width: 150px;
+    height: 150px;
+  }
+  header section .container .center .center-right .last-line .box2 {
+    max-width: 330px;
+    align-items: start;
+  }
+  header section .container .center .center-right .lb {
+    flex-wrap: wrap-reverse;
+  }
+}/*# sourceMappingURL=media.css.map */
