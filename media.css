@@ -269,8 +269,10 @@
     height: 2px;
   }
   header section .container .center .c-left .cards .mini-cards .mini-card-box {
+    max-width: 235px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
   }
   header section .container .center .c-left .expenses {
     max-width: 330px;

@@ -324,8 +324,10 @@
                                     height: 2px;
                                 }
                                 .mini-card-box{
+                                    max-width: 235px;
                                     flex-direction: row;
                                     flex-wrap: wrap;
+                                    gap: 20px;
 
                                 }
                             }
