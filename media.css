@@ -88,7 +88,6 @@
   header section .container .center {
     max-width: 1110px;
     padding-bottom: 100px;
-    flex-wrap: wrap;
   }
   header section .container .right {
     position: absolute;
@@ -117,6 +116,7 @@
   }
   header section .container {
     max-width: 690px;
+    flex-direction: column;
   }
   header section .container .left {
     height: 850px;
@@ -299,6 +299,13 @@
   header section .container .center .c-left .expenses .e-bottom {
     max-width: 330px;
     flex-direction: column;
+  }
+  header section .container .center .c-left .expenses .e-bottom .img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+  header section .container .center .c-left .expenses .e-bottom .img img {
+    width: 100%;
   }
   header section .container .center .c-left .expenses .e-bottom .buttons {
     max-width: 278px;
